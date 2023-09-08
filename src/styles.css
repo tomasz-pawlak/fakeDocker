@@ -1,1 +1,127 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  font-family: Ubuntu, sans-serif;
+  margin: auto;
+  padding: 0;
+  background-color: #032936;
+  color: white;
+}
+
+header {
+  color: white;
+  background-color: #047fa4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 0.4rem;
+  color: #047fa4;
+  text-decoration-color: #047fa4;
+
+}
+
+.miniMenu {
+  display: flex;
+
+  > button {
+    margin: 0;
+    padding-left: 0rem;
+    color: white;
+    background-color: transparent;
+    border-width: 0px 0em 0px 0;
+    cursor: pointer;
+  }
+
+  > button.active {
+    border-width: 0px 0em 2px 0;
+    border-style: solid;
+    border-color: #047fa4;
+  }
+
+}
+
+.box {
+  border-color: #047fa4;
+  background-color: #123b4f;
+  border-style: solid;
+  padding: 0.5rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    > img {
+      height: 2rem;
+    }
+  }
+
+  .title {
+    font-size: 0.7rem;
+    margin-left: 0.7rem;
+  }
+
+  .description {
+    font-size: 0.4rem;
+    margin: 0;
+  }
+}
+
+footer {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  & a {
+    color: white !important;
+    text-decoration: none;
+
+  }
+
+  & a:hover {
+    text-decoration: underline !important;
+  }
+
+  & ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .footerLinks {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-top: 0px !important;
+  }
+}
+
+hr {
+  border: solid #047fa4;
+  width: 100%;
+}
+
+
+[hidden] {
+  display: none !important;
+}
+
+/*html, body, div {*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*}*/
+
+/*@media all and (max-width: 800px){*/
+/*  nav{*/
+/*  }*/
+/*}*/
+
+/*@media all and (max-width: 500px){*/
+/*  nav{*/
+/*    flex-direction: column;*/
+/*    justify-content: flex-end;*/
+/*  }*/
+/*}*/

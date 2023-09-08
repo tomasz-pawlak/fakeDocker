@@ -1,0 +1,416 @@
+<header>
+  <div class="container">
+    <nav class="fullItems">
+      <!--logo-->
+      <div>
+        <img src="assets/docker.png"/>
+      </div>
+      <!--navbar-->
+      <ul class="navLinks">
+        <li class="nav-item"><a href="http://acmilan.com.pl">Guides</a></li>
+        <li class="nav-item"><a href="http://acmilan.com.pl">Manuals</a></li>
+        <li class="nav-item"><a href="http://acmilan.com.pl">Reference</a></li>
+        <li class="nav-item"><a href="http://acmilan.com.pl">Samples</a></li>
+        <li class="nav-item"><a href="http://acmilan.com.pl">FAQ</a></li>
+        <li class="nav-item"><a href="http://acmilan.com.pl">Contributes</a></li>
+      </ul>
+    </nav>
+    <div style="display: flex; justify-content: center;align-items: center; gap: 10px">
+      <div class="rightBar">
+        <button style="height: 10px">Button</button>
+        <p style="margin-right: 0.5rem">Search</p>
+      </div>
+      <button>B</button>
+    </div>
+  </div>
+</header>
+
+<main style="margin-bottom: 0px">
+  <div style="display: flex; justify-content: center;">
+    <h4>What can we help you find?</h4>
+  </div>
+</main>
+
+<div class="firstMenu">
+  <div class="box">
+    <div>
+      <img src="assets/firstMenu/rocket-dark.svg" alt=""/>
+      <div class="title">Get started</div>
+    </div>
+    <div class="description">Learn Docker basics and the benefits of containerizing your applications.</div>
+  </div>
+  <div class="box">
+    <div>
+      <img src="assets/firstMenu/download-docker-dark.svg"/>
+      <div class="title">Download and install</div>
+    </div>
+    <div class="description">Download and install Docker on your machine in a few easy steps.</div>
+  </div>
+  <div class="box">
+    <div>
+      <img src="assets/firstMenu/guides-dark.svg"/>
+      <div class="title">Guide</div>
+    </div>
+    <div class="description">Learn how to set up your Docker environment and start containerizing your applications.
+    </div>
+  </div>
+  <div class="box">
+    <div>
+      <img src="assets/firstMenu/language-guides-dark.svg"/>
+      <div class="title">Language-specific guides</div>
+    </div>
+    <div class="description">Learn how to use Docker with your favorite programming language.</div>
+  </div>
+  <div class="box">
+    <div>
+      <img src="assets/firstMenu/manuals-dark.svg"/>
+      <div class="title">Manuals</div>
+    </div>
+    <div class="description">Browse the manuals and learn how to use Docker products.</div>
+  </div>
+  <div class="box">
+    <div>
+      <img src="assets/firstMenu/reference-dark.svg"/>
+      <div class="title">Reference</div>
+    </div>
+    <div class="description">Browse the CLI and API reference documentation.</div>
+  </div>
+</div>
+
+<div class="secondMenu">
+  <div class="box">
+
+    <!--    <div class="miniMenu">-->
+    <div class="miniMenu">
+      <button (click)="showExplore()" [ngClass]="{active: isExploreDocker}">Explore Docker</button>
+      <button (click)="showBrowse()" [ngClass]="{active: isBrowseFaq}">Browse FAQa</button>
+      <button (click)="showGetSupport()" [ngClass]="{active: isGetSupport}">Get support</button>
+    </div>
+    <!--Pierwsza zakładka 'ExploreDocker-->
+    <div [hidden]="!isExploreDocker" style="display: flex;">
+      <div class="links">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Write a Dockerfile</a></li>
+          <li><a href="http://acmilan.com.pl">Manage container networking</a></li>
+          <li><a href="http://acmilan.com.pl">Write a Docker Compose file</a></li>
+          <li><a href="http://acmilan.com.pl">Work with volumes and mounts</a></li>
+          <li><a href="http://acmilan.com.pl">Share images on Docker Hub</a></li>
+        </ul>
+      </div>
+      <div class="links" style="margin-left: 4rem">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Configure the Docker daemon</a></li>
+          <li><a href="http://acmilan.com.pl">Build and run an image</a></li>
+          <li><a href="http://acmilan.com.pl">Manage Docker objects</a></li>
+          <li><a href="http://acmilan.com.pl">Multi-stage builds</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Druga zakładka 'BrowseFAQs-->
+    <div [hidden]="!isBrowseFaq" style="display: flex;">
+      <div class="links">
+        <ul>
+          <li><a href="http://acmilan.com.pl">What are the system requirements for Docker Desktop?</a></li>
+          <li><a href="http://acmilan.com.pl">Where can I find example Compose files?</a></li>
+          <li><a href="http://acmilan.com.pl">How do I connect from a container to a service?</a></li>
+          <li><a href="http://acmilan.com.pl">How do I share images on Docker Hub?</a></li>
+        </ul>
+      </div>
+      <div class="links" style="margin-left: 4rem">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Docker Desktop</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop for Mac</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop for Windows</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop for Linux</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop Sign-on</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Trzecia zakładka 'BrowseFAQs-->
+    <div [hidden]="!isGetSupport" style="display: flex;">
+      <div class="links">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Get support</a></li>
+          <li><a href="http://acmilan.com.pl">Docker community Slack</a></li>
+          <li><a href="http://acmilan.com.pl">Contact Docker</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box">
+    <h5>
+      Popular videos
+    </h5>
+    <p class="description">Watch the most ppopular videos from DockerCon.</p>
+    <a href="http://acmilan.com.pl">
+      <img src="assets/secondMenu/video.svg">
+      <p>How to get started with Docker</p>
+    </a>
+    <a href="http://acmilan.com.pl">
+      <img src="assets/secondMenu/video.svg">
+      <p>How to build and test your Docker images in the Cloud</p>
+    </a>
+    <a href="http://acmilan.com.pl">
+      <img src="assets/secondMenu/video.svg">
+      <p>Simplyfy all the things with Docker Compose</p>
+    </a>
+  </div>
+
+
+</div>
+
+<div class="businessCustomers">
+  <div class="inner">
+    <h4 style="margin-bottom: 0px">Hardened Docker Desktop for Docker Business customers</h4>
+    <p style="font-size: 0.4rem">Two new security features have been introduced for Docker Business users, Settings
+      Management and Enhanced Container Isolation, as part of Docker Desktop’s new security model.</p>
+    <button style="max-width: 5rem; margin-left: 0">Learn more</button>
+  </div>
+  <div>
+    <img src="assets/hardened-desktop.PNG" style=" object-fit: cover;
+  max-width: 6rem;
+  min-width: 1rem;">
+    <!--test-->
+  </div>
+</div>
+
+<div class="dockerDesktopBox">
+  <!--  <div style="display: flex; flex-direction: column; padding: 0.5rem;">-->
+  <div class="box">
+
+    <!--    <div style="display: flex">-->
+    <div class="miniMenu" style="margin-bottom: 0.8rem ">
+      <button>Desktop</button>
+      <button>Engine</button>
+      <button>Build</button>
+      <button>Compose</button>
+      <button>Hub</button>
+    </div>
+    <div style="display:flex ; ">
+      <div style="flex: 25%; display: flex; flex-direction: column ; justify-content: center">
+        <div style="display: flex; justify-content: center">
+          <img src="assets/laptop.svg" style="max-width: 4rem">
+        </div>
+        <span style="font-size: 0.8rem; display: flex; justify-content: center; margin-top: 1rem;">Docker Desktop</span>
+      </div>
+      <div style="flex: 50%; flex-direction: column;margin-left: 1rem; align-items: center">
+        <h6 style="margin:0 0 0 0 ">Getting started with Docker Desktop</h6>
+        <span style="font-size: 0.4rem">Take a walkthrough that covers writing your first app, data storage, networking, and swarms, and ends
+          with your app running on production servers in the cloud.</span>
+        <br>
+        <a>Learn Docker</a>
+      </div>
+      <div class="box ">
+        <h5>
+          Popular articles
+        </h5>
+        <p class="description">Watch the most ppopular videos from DockerCon.</p>
+        <a href="http://acmilan.com.pl">
+          <p>How to get started with Docker</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>How to build and test your Docker images in the Cloud</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Simplyfy all the things with Docker Compose</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="simpleLinks">
+  <div class="box">
+    <h5>Best practices</h5>
+    <ul style="margin: 0">
+      <li><a href="http://acmilan.com.pl">Best practices for writing a Dockerfile</a></li>
+      <li><a href="http://acmilan.com.pl">Best practices for writing a Docker Compose file</a></li>
+      <li><a href="http://acmilan.com.pl">Docker development best practices</a></li>
+      <li><a href="http://acmilan.com.pl">Docker security best practices</a></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h5>Develop with Docker</h5>
+    <ul>
+      <li><a href="http://acmilan.com.pl">Containerize a Node.js app using Docker</a></li>
+      <li><a href="http://acmilan.com.pl">Containerize a Python app using Docker</a></li>
+      <li><a href="http://acmilan.com.pl">Containerize a Java app using Docker</a></li>
+      <li><a href="http://acmilan.com.pl">Containerize a Go app using Docker</a></li>
+      <li><a href="http://acmilan.com.pl">View more languages and frameworks in Docker samples</a></li>
+    </ul>
+  </div>
+</div>
+
+<div style="display: flex; flex-direction:column;margin: 0 1.5rem 0 1.5rem; ">
+  <h5 style="display: flex; justify-content: flex-start">Play with Docker</h5>
+  <div class="gridBottom">
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Tutorial</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Self-paced tutorials to increase your Docker knowledge.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Lab environment</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Complete a workshop without installing anything using this Docker playground.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Community training</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Free and paid learning materials from Docker captains.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; flex-direction:column;margin: 1.5rem 1.5rem 0 1.5rem; ">
+  <h5 style="display: flex; justify-content: flex-start">Community resources</h5>
+  <div class="gridBottom">
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Find a local meetup</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Attend one of the 200+ Docker Meetups around the globe.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Upcoming events</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Learn from experts and get to know Docker.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Tune in monthly</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Join the Virtual Docker Meetup Group and online meetups every month.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Community news</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        The Docker Weekly is an email newsletter with the latest content on DOcker and the event agenda for
+        the
+        upcoming weeks.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Meet the captains</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Select members of the community that are both experts in their field and are passionate about sharing
+        their Docker knowledge with others.
+      </div>
+    </div>
+    <div class="box">
+      <div style="margin: 0">
+        <h6 style="margin: 0 0 .5rem 0">Educational resources</h6>
+      </div>
+      <div style="font-size: 0.4rem; margin-bottom: 0">
+        Expand your understanding of Docker with these additional resources.
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<footer>
+  <div style="display: flex; flex-direction: column">
+    <div style="display: flex;  justify-content: space-between; gap: 1.5rem ">
+      <div style="display: flex; flex-direction: column">
+        <h6 style="margin: 0px"><a href="http://acmilan.com.pl">About us</a></h6>
+        <ul>
+          <li><a href="http://acmilan.com.pl">Careers</a></li>
+          <li><a href="http://acmilan.com.pl">Contact us</a></li>
+          <li><a href="http://acmilan.com.pl">Customers</a></li>
+          <li><a href="http://acmilan.com.pl">Newsletter</a></li>
+          <li><a href="http://acmilan.com.pl">Newsroom</a></li>
+          <li><a href="http://acmilan.com.pl">Swag store</a></li>
+          <li><a href="http://acmilan.com.pl">Virtual events</a></li>
+          <li><a href="http://acmilan.com.pl">What is a container</a></li>
+          <li><a href="http://acmilan.com.pl">Why docker</a></li>
+        </ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column">
+        <h6 style="margin: 0px"><a href="http://acmilan.com.pl">Developers</a></h6>
+        <ul>
+          <li><a href="http://acmilan.com.pl">Block</a></li>
+          <li><a href="http://acmilan.com.pl">Community</a></li>
+          <li><a href="http://acmilan.com.pl">Get started</a></li>
+          <li><a href="http://acmilan.com.pl">Open Source</a></li>
+          <li><a href="http://acmilan.com.pl">Preview Program</a></li>
+          <li><a href="http://acmilan.com.pl">Use cases</a></li>
+        </ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column">
+        <h6 style="margin: 0px"><a href="http://acmilan.com.pl">Features</a></h6>
+        <ul>
+          <li><a href="http://acmilan.com.pl">Container Runtime</a></li>
+          <li><a href="http://acmilan.com.pl">Developer Tools</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Hub</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Product Roadmap</a></li>
+          <li><a href="http://acmilan.com.pl">Secure Software Supply Chain</a></li>
+          <li><a href="http://acmilan.com.pl">Trusted Content</a></li>
+        </ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column">
+        <h6 style="margin: 0px"><a href="http://acmilan.com.pl">Product offerings</a></h6>
+        <ul>
+          <li><a href="http://acmilan.com.pl">Docker Business</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Personal</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Pro</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Team</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Verified Publisher</a></li>
+          <li><a href="http://acmilan.com.pl">Partners</a></li>
+          <li><a href="http://acmilan.com.pl">Pricing FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footerLinks">
+      <div><a href="http://acmilan.com.pl">Terms of Services</a></div>
+      <div><a href="http://acmilan.com.pl">Status</a></div>
+      <div><a href="http://acmilan.com.pl">Legal</a></div>
+    </div>
+
+    <br>
+
+    <div style="display: flex; gap: 5px; justify-content: space-between">
+
+      <div>
+        <span style="font-size: 0.4rem"> Copyright © 2013-2023 Docker Inc. All rights reserved.</span>
+      </div>
+      <div class="footerLinks">
+        <div><a href="http://acmilan.com.pl">Twitter</a></div>
+        <div><a href="http://acmilan.com.pl">Youtube</a></div>
+        <div><a href="http://acmilan.com.pl">Github</a></div>
+        <div><a href="http://acmilan.com.pl">Linkedin</a></div>
+        <div><a href="http://acmilan.com.pl">Facebook</a></div>
+        <div><a href="http://acmilan.com.pl">Reddit</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
