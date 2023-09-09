@@ -42,16 +42,6 @@
   gap: 0.7rem;
 }
 
-button {
-  display: flex;
-  height: 0.6rem;
-  font-size: 0.5rem;
-
-  margin-left: 0.5rem;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .firstMenu {
   display: grid;
@@ -108,10 +98,7 @@ button {
 
 }
 
-h5 {
-  padding: 0 0 0 0;
-  margin: 0 0 0.5rem 0;
-}
+
 
 .businessCustomers {
   display: flex;
@@ -130,37 +117,21 @@ h5 {
   }
 }
 
-.dockerDesktopBox {
-  display: flex;
-  background-color: #123b4f;
-  margin: 0 1.5rem 1rem 1.5rem;
-  padding: 0 1.5rem 1rem 1.5rem;
+/*.dockerDesktopBox {*/
+/*  display: flex;*/
+/*  background-color: #123b4f;*/
+/*  margin: 0 1.5rem 1rem 1.5rem;*/
+/*  padding: 0 1.5rem 1rem 1.5rem;*/
 
 
-  .box {
-    border-color: #123b4f;
-    background-color: #123b4f;
-    border-style: solid;
-    padding: 0.5rem;
-    align-items: flex-start;
-  }
-
-  & button {
-    margin: 0;
-    color: white;
-    background-color: transparent;
-    border-width: 0px 0em 0px 0; /* top right bottom left */
-    cursor: pointer;
-
-    /*border-color: #f00 #0f0 #00f #ff0;*/
-
-    > button:active {
-      border-width: 0px 0em 2px 0; /* top right bottom left */
-      border-style: solid;
-      border-color: #047fa4;
-    }
-  }
-}
+/*  .box {*/
+/*    border-color: #123b4f;*/
+/*    background-color: #123b4f;*/
+/*    border-style: solid;*/
+/*    padding: 0.5rem;*/
+/*    align-items: flex-start;*/
+/*  }*/
+/*}*/
 
 .simpleLinks {
   display: flex;

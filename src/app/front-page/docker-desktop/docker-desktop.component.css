@@ -1,0 +1,15 @@
+.dockerDesktopBox {
+  display: flex;
+  background-color: #123b4f;
+  margin: 0 1.5rem 1rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+
+
+  .box {
+    border-color: #123b4f;
+    background-color: #123b4f;
+    border-style: solid;
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+}

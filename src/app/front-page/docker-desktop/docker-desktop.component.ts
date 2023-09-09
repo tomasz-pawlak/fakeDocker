@@ -1,39 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-front-page',
-  templateUrl: './front-page.component.html',
-  styleUrls: ['./front-page.component.css']
+  selector: 'app-docker-desktop',
+  templateUrl: './docker-desktop.component.html',
+  styleUrls: ['./docker-desktop.component.css']
 })
-export class FrontPageComponent {
-  isExploreDocker: boolean = true;
-  isBrowseFaq: boolean = false;
-  isGetSupport: boolean = false;
-
+export class DockerDesktopComponent {
   isDesktopTabActive: boolean = true;
   isEngineTabActive: boolean = false;
   isBuildTabActive: boolean = false;
   isComposeTabActive: boolean = false;
   isHubTabActive: boolean = false;
-
-  showExplore() {
-    this.isExploreDocker = true;
-    this.isBrowseFaq = false;
-    this.isGetSupport = false;
-  }
-
-  showBrowse() {
-    this.isExploreDocker = false;
-    this.isBrowseFaq = true;
-    this.isGetSupport = false;
-  }
-
-  showGetSupport() {
-    this.isExploreDocker = false;
-    this.isBrowseFaq = false;
-    this.isGetSupport = true;
-  }
-
   showDesktopTab() {
     this.isDesktopTabActive = true;
     this.isEngineTabActive = false;

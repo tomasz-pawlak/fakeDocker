@@ -1,0 +1,195 @@
+<div class="dockerDesktopBox">
+  <!--  <div style="display: flex; flex-direction: column; padding: 0.5rem;">-->
+  <div class="box">
+
+    <!--    <div style="display: flex">-->
+    <div class="miniMenu" style="margin-bottom: 0.8rem ">
+
+      <button (click)="showDesktopTab()" [ngClass]="{active: isDesktopTabActive}">Desktop</button>
+      <button (click)="showEngineTab()" [ngClass]="{active:isEngineTabActive}">Engine</button>
+      <button (click)="showBuildTab()" [ngClass]="{active:isBuildTabActive}">Build</button>
+      <button (click)="showComposeTab()" [ngClass]="{active:isComposeTabActive}">Compose</button>
+      <button (click)="showHubTab()" [ngClass]="{active:isHubTabActive}">Hub</button>
+    </div>
+
+    <!--    Desktop-->
+    <div style="display:flex ; " [hidden]="!isDesktopTabActive">
+      <div style="flex: 25%; display: flex; flex-direction: column ; justify-content: center; width: 30%">
+        <div style="display: flex; justify-content: center">
+          <img src="assets/dockerDesktopBox/laptop.svg" style="max-width: 4rem">
+        </div>
+        <span style="font-size: 0.8rem; display: flex; justify-content: center; margin-top: 1rem;">Docker Desktop</span>
+      </div>
+      <div style="flex: 50%; flex-direction: column;margin-left: 1rem; align-items: center; width: 40%">
+        <h6 style="margin:0 0 0 0 ">Getting started with Docker Desktop</h6>
+        <span style="font-size: 0.4rem">Take a walkthrough that covers writing your first app, data storage, networking,
+          and swarms, and ends with your app running on production servers in the cloud.</span>
+        <br>
+        <a>Learn Docker</a>
+      </div>
+      <div class="box " style="width: 30%">
+        <h5>
+          Popular articles
+        </h5>
+        <a href="http://acmilan.com.pl">
+          <p>Watch the most ppopular videos from DockerCon.</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>How to get started with Docker</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>How to build and test your Docker images in the Cloud</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Simplyfy all the things with Docker Compose</p>
+        </a>
+      </div>
+    </div>
+
+    <!--    Engine-->
+    <div style="display:flex ; " [hidden]="!isEngineTabActive">
+      <div style="flex: 25%; display: flex; flex-direction: column ; justify-content: center; width: 30%">
+        <div style="display: flex; justify-content: center">
+          <img src="assets/dockerDesktopBox/engine.svg" style="max-width: 4rem">
+        </div>
+        <span style="font-size: 0.8rem; display: flex; justify-content: center; margin-top: 1rem;">Docker Engine</span>
+      </div>
+      <div style="flex: 50%; flex-direction: column;margin-left: 1rem; align-items: center; width: 40%">
+        <h6 style="margin:0 0 0 0 ">Getting started with Docker Engine</h6>
+        <span style="font-size: 0.4rem">Take a walkthrough that covers writing your first app, data storage, networking, and swarms,
+          and ends with your app running on production servers in the cloud.</span>
+        <br>
+        <a>Learn Docker</a>
+      </div>
+      <div class="box " style="width: 30%">
+        <h5>
+          Popular articles
+        </h5>
+        <a href="http://acmilan.com.pl">
+          <p>Install Docker Engine on Ubuntu</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Run a command in a container</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Dockerfile reference</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Docker daemon reference</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Docker build reference</p>
+        </a>
+      </div>
+    </div>
+
+    <!--    Build-->
+    <div style="display:flex ; " [hidden]="!isBuildTabActive">
+      <div style="flex: 25%; display: flex; flex-direction: column ; justify-content: center; width: 30%">
+        <div style="display: flex; justify-content: center">
+          <img src="assets/dockerDesktopBox/whale-car.png" style="max-width: 4rem">
+        </div>
+        <span style="font-size: 0.8rem; display: flex; justify-content: center; margin-top: 1rem;">Docker Build</span>
+      </div>
+      <div style="flex: 50%; flex-direction: column;margin-left: 1rem; align-items: center; width: 40%">
+        <h6 style="margin:0 0 0 0 ">Getting started with Docker Build</h6>
+        <span style="font-size: 0.4rem">Take a walkthrough that covers writing your first app, data storage, networking, and swarms,
+          and ends with your app running on production servers in the cloud.</span>
+        <br>
+        <a>Learn Docker</a>
+      </div>
+      <div class="box " style="width: 30%">
+        <h5>
+          Popular articles
+        </h5>
+        <a href="http://acmilan.com.pl">
+          <p>Overview of Docker Build</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Dockerfile reference</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Packaging your software</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Multi-stage builds</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Multi-platform images</p>
+        </a>
+      </div>
+    </div>
+
+    <!--    Compose-->
+    <div style="display:flex ; " [hidden]="!isComposeTabActive">
+      <div style="flex: 25%; display: flex; flex-direction: column ; justify-content: center; width: 30%">
+        <div style="display: flex; justify-content: center">
+          <img src="assets/dockerDesktopBox/Compose.png" style="max-width: 4rem">
+        </div>
+        <span style="font-size: 0.8rem; display: flex; justify-content: center; margin-top: 1rem;">Docker Compose</span>
+      </div>
+      <div style="flex: 50%; flex-direction: column;margin-left: 1rem; align-items: center; width: 40%">
+        <h6 style="margin:0 0 0 0 ">Getting started with Docker Compose</h6>
+        <span style="font-size: 0.4rem">Take a walkthrough that covers writing your first app, data storage, networking, and swarms,
+          and ends with your app running on production servers in the cloud.</span>
+        <br>
+        <a>Learn Docker</a>
+      </div>
+      <div class="box " style="width: 30%">
+        <h5>
+          Popular articles
+        </h5>
+        <a href="http://acmilan.com.pl">
+          <p>Install Docker Compose</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Getting started wtih Docker Compose</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Environment variables in Compose</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Networking in Compose</p>
+        </a>
+      </div>
+    </div>
+
+    <!--    Hub-->
+    <div style="display:flex ; " [hidden]="!isHubTabActive">
+      <div style="flex: 25%; display: flex; flex-direction: column ; justify-content: center; width: 30%">
+        <div style="display: flex; justify-content: center">
+          <img src="assets/dockerDesktopBox/hub.svg" style="max-width: 4rem">
+        </div>
+        <span style="font-size: 0.8rem; display: flex; justify-content: center; margin-top: 1rem;">Docker Hub</span>
+      </div>
+      <div style="flex: 50%; flex-direction: column;margin-left: 1rem; align-items: center; width: 40%">
+        <h6 style="margin:0 0 0 0 ">Getting started with Docker Hub</h6>
+        <span style="font-size: 0.4rem">Take a walkthrough that covers writing your first app, data storage, networking, and swarms,
+          and ends with your app running on production servers in the cloud.</span>
+        <br>
+        <a>Learn Docker</a>
+      </div>
+      <div class="box " style="width: 30%">
+        <h5>
+          Popular articles
+        </h5>
+        <a href="http://acmilan.com.pl">
+          <p>Docker Hub official images</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Create Docker Hub repositories</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Set up automated builds</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Manage access tokens</p>
+        </a>
+        <a href="http://acmilan.com.pl">
+          <p>Docker Hub webhooks</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
