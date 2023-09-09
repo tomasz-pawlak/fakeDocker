@@ -1,0 +1,85 @@
+
+<div class="container">
+  <div class="box">
+
+    <!--    <div class="miniMenu">-->
+    <div class="miniMenu">
+      <button (click)="showExplore()" [ngClass]="{active: isExploreDocker}">Explore Docker</button>
+      <button (click)="showBrowse()" [ngClass]="{active: isBrowseFaq}">Browse FAQa</button>
+      <button (click)="showGetSupport()" [ngClass]="{active: isGetSupport}">Get support</button>
+    </div>
+    <!--Pierwsza zakładka 'ExploreDocker-->
+    <div [hidden]="!isExploreDocker" style="display: flex;">
+      <div class="links">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Write a Dockerfile</a></li>
+          <li><a href="http://acmilan.com.pl">Manage container networking</a></li>
+          <li><a href="http://acmilan.com.pl">Write a Docker Compose file</a></li>
+          <li><a href="http://acmilan.com.pl">Work with volumes and mounts</a></li>
+          <li><a href="http://acmilan.com.pl">Share images on Docker Hub</a></li>
+        </ul>
+      </div>
+      <div class="links" style="margin-left: 4rem">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Configure the Docker daemon</a></li>
+          <li><a href="http://acmilan.com.pl">Build and run an image</a></li>
+          <li><a href="http://acmilan.com.pl">Manage Docker objects</a></li>
+          <li><a href="http://acmilan.com.pl">Multi-stage builds</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Druga zakładka 'BrowseFAQs-->
+    <div [hidden]="!isBrowseFaq" style="display: flex;">
+      <div class="links">
+        <ul>
+          <li><a href="http://acmilan.com.pl">What are the system requirements for Docker Desktop?</a></li>
+          <li><a href="http://acmilan.com.pl">Where can I find example Compose files?</a></li>
+          <li><a href="http://acmilan.com.pl">How do I connect from a container to a service?</a></li>
+          <li><a href="http://acmilan.com.pl">How do I share images on Docker Hub?</a></li>
+        </ul>
+      </div>
+      <div class="links" style="margin-left: 4rem">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Docker Desktop</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop for Mac</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop for Windows</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop for Linux</a></li>
+          <li><a href="http://acmilan.com.pl">Docker Desktop Sign-on</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Trzecia zakładka 'BrowseFAQs-->
+    <div [hidden]="!isGetSupport" style="display: flex;">
+      <div class="links">
+        <ul>
+          <li><a href="http://acmilan.com.pl">Get support</a></li>
+          <li><a href="http://acmilan.com.pl">Docker community Slack</a></li>
+          <li><a href="http://acmilan.com.pl">Contact Docker</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box">
+    <h5>
+      Popular videos
+    </h5>
+    <p class="description">Watch the most ppopular videos from DockerCon.</p>
+    <a href="http://acmilan.com.pl">
+      <img src="assets/secondMenu/video.svg">
+      <p>How to get started with Docker</p>
+    </a>
+    <a href="http://acmilan.com.pl">
+      <img src="assets/secondMenu/video.svg">
+      <p>How to build and test your Docker images in the Cloud</p>
+    </a>
+    <a href="http://acmilan.com.pl">
+      <img src="assets/secondMenu/video.svg">
+      <p>Simplyfy all the things with Docker Compose</p>
+    </a>
+  </div>
+
+
+</div>
