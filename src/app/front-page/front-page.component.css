@@ -1,46 +1,30 @@
-.container {
-  display: flex;
-  /*flex-direction: row;*/
-  justify-content: center;
-  align-items: center;
-  height: 1.5rem;
-  font-size: 0.4rem;
-}
+/*.container {*/
+/*  display: flex;*/
+/*  !*flex-direction: row;*!*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  height: 1.5rem;*/
+/*  font-size: 0.4rem;*/
+/*}*/
 
-.fullItems {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/*.fullItems {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*}*/
 
 
-.fullItems > div > img {
-  object-fit: cover;
-  max-width: 4rem;
-  min-width: 1rem;
-}
+/*.fullItems > div > img {*/
+/*  object-fit: cover;*/
+/*  max-width: 4rem;*/
+/*  min-width: 1rem;*/
+/*}*/
 
-.navLinks {
-  list-style: none;
-  display: flex;
-}
+/*.navLinks {*/
+/*  list-style: none;*/
+/*  display: flex;*/
+/*}*/
 
-.nav-item a {
-  /*display: inline-block;*/
-  padding: 10px 5px;
-  text-decoration: none;
-  color: white;
-}
-
-.rightBar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #04475b;
-  height: 0.7rem;
-  padding: 2px;
-  gap: 0.7rem;
-}
 
 
 .firstMenu {
@@ -94,44 +78,7 @@
       max-width: 2rem;
     }
   }
-
-
 }
-
-
-
-.businessCustomers {
-  display: flex;
-  background-color: #047fa4;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 2rem;
-  align-items: center;
-  margin-bottom: 1rem;
-
-  .inner {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
-    /*justify-items: center;*/
-  }
-}
-
-/*.dockerDesktopBox {*/
-/*  display: flex;*/
-/*  background-color: #123b4f;*/
-/*  margin: 0 1.5rem 1rem 1.5rem;*/
-/*  padding: 0 1.5rem 1rem 1.5rem;*/
-
-
-/*  .box {*/
-/*    border-color: #123b4f;*/
-/*    background-color: #123b4f;*/
-/*    border-style: solid;*/
-/*    padding: 0.5rem;*/
-/*    align-items: flex-start;*/
-/*  }*/
-/*}*/
 
 .simpleLinks {
   display: flex;

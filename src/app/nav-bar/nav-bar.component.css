@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  font-size: 0.4rem;
+}
+
+.fullItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.fullItems > div > img {
+  object-fit: cover;
+  max-width: 4rem;
+  min-width: 1rem;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  padding: 10px 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.rightBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #04475b;
+  height: 0.7rem;
+  padding: 2px;
+  gap: 0.7rem;
+}
+
